@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700;900&display=swap");
+body {
+  font-family: 'Bitter', serif;
+}
+
+::-moz-selection {
+  background-color: rgba(3, 169, 86, 0.3);
+}
+
+::selection {
+  background-color: rgba(3, 169, 86, 0.3);
+}
+
+a {
+  color: #03a957;
+}
+
+p {
+  line-height: 1.8 !important;
+  font-size: 1.1em;
+}
+
+.btn-success {
+  font-weight: 700;
+}
+
+#whatsapp {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 99;
+  background-color: #0f7e2b;
+  color: #fff;
+  font-size: 2em;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+#principal {
+  background-color: #03a957;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#principal h1 {
+  color: #fff;
+  line-height: 1.6;
+  font-size: 2.5em;
+}
+
+#principal h1 strong {
+  background-color: #fff;
+  color: #03a957;
+  border-radius: 10px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+#principal p {
+  color: #fff;
+}
+
+#formulario {
+  background-color: #fff;
+  height: 90vh;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+#formulario h3,
+#formulario p {
+  color: #161616;
+  text-align: center;
+}
+
+#formulario h3 strong,
+#formulario p strong {
+  color: #03a957;
+}
+
+#formulario .btn-success {
+  padding: 13px;
+}
+
+.bg-gray {
+  background-color: whitesmoke;
+}
+
+#beneficios .card {
+  border-color: transparent;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: relative;
+  z-index: 0;
+}
+
+#beneficios .card h4 {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+#beneficios .card p {
+  font-size: .8em;
+}
+
+#beneficios .card i {
+  font-size: 3em;
+  color: #03a957;
+}
+
+#beneficios .card:hover {
+  -webkit-transform: scale(1.1) translate(0, -30px);
+          transform: scale(1.1) translate(0, -30px);
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: 0 50px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 50px 20px rgba(0, 0, 0, 0.15);
+}
+
+#depoimentos {
+  background: #08aa54;
+  background: -webkit-gradient(linear, left top, right top, from(#08aa54), to(#7dcc30));
+  background: linear-gradient(90deg, #08aa54 0%, #7dcc30 100%);
+  position: relative;
+}
+
+#depoimentos:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg-depoimento.png);
+  background-size: 100%;
+  opacity: .3;
+}
+
+#depoimentos h2 {
+  color: #fff;
+}
+
+#depoimentos h2 strong {
+  background-color: #03a957;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+#depoimentos p {
+  color: #fff;
+}
+
+#depoimentos .plyr {
+  margin: 0 15px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #50aa57;
+}
+
+.plyr {
+  height: 300px;
+}
+
+#resultados {
+  background: #08aa54;
+  background: -webkit-gradient(linear, left top, right top, from(#08aa54), to(#7dcc30));
+  background: linear-gradient(90deg, #08aa54 0%, #7dcc30 100%);
+}
+
+#resultados h2,
+#resultados h5,
+#resultados p {
+  color: #fff;
+}
+
+#resultados h2 {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+#resultados h5 {
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  #principal {
+    min-height: 90vh;
+  }
+  #beneficios .card:hover {
+    -webkit-transform: scale(1.02) translate(0, -30px);
+            transform: scale(1.02) translate(0, -30px);
+  }
+}
+
+.pure-material-textfield-outlined {
+  position: relative;
+  display: inline-block;
+  padding-top: 6px;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Input, Textarea */
+.pure-material-textfield-outlined > input,
+.pure-material-textfield-outlined > textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  border: solid 1px;
+  /* Safari */
+  border-color: #1d1d1d;
+  border-top-color: transparent;
+  border-radius: 4px;
+  padding: 15px 13px 15px;
+  width: 100%;
+  height: inherit;
+  color: #1d1d1d;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  /* Firefox */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  caret-color: #03a957;
+  -webkit-transition: border 0.2s, -webkit-box-shadow 0.2s;
+  transition: border 0.2s, -webkit-box-shadow 0.2s;
+  transition: border 0.2s, box-shadow 0.2s;
+  transition: border 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+/* Span */
+.pure-material-textfield-outlined > input + span,
+.pure-material-textfield-outlined > textarea + span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-color: #03a957;
+  width: 100%;
+  max-height: 100%;
+  color: #1d1d1d;
+  font-size: 75%;
+  line-height: 15px;
+  cursor: text;
+  -webkit-transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+  transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+
+/* Corners */
+.pure-material-textfield-outlined > input + span::before,
+.pure-material-textfield-outlined > input + span::after,
+.pure-material-textfield-outlined > textarea + span::before,
+.pure-material-textfield-outlined > textarea + span::after {
+  content: "";
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  border-top: solid 1px;
+  border-top-color: #03a957;
+  min-width: 10px;
+  height: 8px;
+  pointer-events: none;
+  -webkit-box-shadow: inset 0 1px transparent;
+          box-shadow: inset 0 1px transparent;
+  -webkit-transition: border-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: border-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.pure-material-textfield-outlined > input + span::before,
+.pure-material-textfield-outlined > textarea + span::before {
+  margin-right: 4px;
+  border-left: solid 1px transparent;
+  border-radius: 4px 0;
+}
+
+.pure-material-textfield-outlined > input + span::after,
+.pure-material-textfield-outlined > textarea + span::after {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 4px;
+  border-right: solid 1px transparent;
+  border-radius: 0 4px;
+}
+
+/* Hover */
+.pure-material-textfield-outlined:hover > input,
+.pure-material-textfield-outlined:hover > textarea {
+  border-color: #03a957;
+  border-top-color: transparent;
+}
+
+.pure-material-textfield-outlined:hover > input + span::before,
+.pure-material-textfield-outlined:hover > textarea + span::before,
+.pure-material-textfield-outlined:hover > input + span::after,
+.pure-material-textfield-outlined:hover > textarea + span::after {
+  border-top-color: #03a957;
+}
+
+.pure-material-textfield-outlined:hover > input:not(:focus):placeholder-shown,
+.pure-material-textfield-outlined:hover > textarea:not(:focus):placeholder-shown {
+  border-color: #03a957;
+}
+
+/* Placeholder-shown */
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown {
+  border-top-color: #1d1d1d;
+}
+
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span {
+  font-size: inherit;
+  line-height: 68px;
+}
+
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span::before,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span::before,
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span::after,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span::after {
+  border-top-color: transparent;
+}
+
+/* Focus */
+.pure-material-textfield-outlined > input:focus,
+.pure-material-textfield-outlined > textarea:focus {
+  border-color: #03a957;
+  border-top-color: transparent;
+  outline: none;
+}
+
+.pure-material-textfield-outlined > input:focus + span,
+.pure-material-textfield-outlined > textarea:focus + span {
+  color: #1d1d1d;
+}
+
+.pure-material-textfield-outlined > input:focus + span::before,
+.pure-material-textfield-outlined > input:focus + span::after,
+.pure-material-textfield-outlined > textarea:focus + span::before,
+.pure-material-textfield-outlined > textarea:focus + span::after {
+  border-top-color: #03a957 !important;
+}
+
+/* Disabled */
+.pure-material-textfield-outlined > input:disabled,
+.pure-material-textfield-outlined > input:disabled + span,
+.pure-material-textfield-outlined > textarea:disabled,
+.pure-material-textfield-outlined > textarea:disabled + span {
+  border-color: #03a957 !important;
+  border-top-color: transparent !important;
+  color: #03a957;
+  pointer-events: none;
+}
+
+.pure-material-textfield-outlined > input:disabled + span::before,
+.pure-material-textfield-outlined > input:disabled + span::after,
+.pure-material-textfield-outlined > textarea:disabled + span::before,
+.pure-material-textfield-outlined > textarea:disabled + span::after {
+  border-top-color: #03a957 !important;
+}
+
+.pure-material-textfield-outlined > input:disabled:placeholder-shown,
+.pure-material-textfield-outlined > input:disabled:placeholder-shown + span,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span {
+  border-top-color: #03a957 !important;
+}
+
+.pure-material-textfield-outlined > input:disabled:placeholder-shown + span::before,
+.pure-material-textfield-outlined > input:disabled:placeholder-shown + span::after,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span::before,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span::after {
+  border-top-color: transparent !important;
+}
+
+/* Faster transition in Safari for less noticable fractional font-size issue */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .pure-material-textfield-outlined > input, .pure-material-textfield-outlined > input + span, .pure-material-textfield-outlined > textarea, .pure-material-textfield-outlined > textarea + span, .pure-material-textfield-outlined > input + span::before, .pure-material-textfield-outlined > input + span::after, .pure-material-textfield-outlined > textarea + span::before, .pure-material-textfield-outlined > textarea + span::after {
+      -webkit-transition-duration: 0.1s;
+              transition-duration: 0.1s;
+    }
+  }
+}
+/*# sourceMappingURL=styles.css.map */
