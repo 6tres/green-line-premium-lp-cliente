@@ -176,6 +176,7 @@ p {
 @media (max-width: 500px) {
     #principal {
         min-height: 90vh;
+        height: auto;
     }
     #beneficios .card:hover {
         transform: scale(1.02) translate(0, -30px)
