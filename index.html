@@ -16,20 +16,21 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-            <div class="row w-100 d-flex justify-content-between align-items-center">
-                <div class="col col-md-4 col-xs-6">
-                    <a class="navbar-brand" href="#"><img src="http://greenlinepremium.com.br/images/logo/logo.png" class="img-fluid" alt=""></a>
-                </div>
-                <div class="col col-md-6 col-xs-6 text-right">
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <div class="row w-100 d-flex justify-content-between align-items-center">
+                    <div class="col col-md-4 col-xs-6">
+                        <a class="navbar-brand" href="#"><img src="http://greenlinepremium.com.br/images/logo/logo.png" class="img-fluid" alt=""></a>
+                    </div>
+                    <div class="col col-md-6 col-xs-6 text-right">
 
-                    <a class="btn btn-success" href="#principal">Quero comprar agora</a>
+                        <a class="btn btn-success" href="#principal">Quero comprar agora</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
+    </header>
     <a data-toggle="tooltip" data-placement="right" title="Chamar no whatsapp" href="https://api.whatsapp.com/send?phone=5517992782000&text=Ol%c3%a1%2c+quero+conhecer+os+benef%c3%adcios+da+Green+Line!" id="whatsapp"><i class="icofont-brand-whatsapp"></i></a>
 
 
@@ -297,7 +298,19 @@
             $('.slide-resultados').slick({
                 autoplay: true,
                 autoplaySpeed: 4000,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                    }
+                }]
             })
+
             $('.slide-depoimentos').slick({
                 slidesToShow: 2,
                 infinite: false,
